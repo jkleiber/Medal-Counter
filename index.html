@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Medal Count - Rio 2016</title>
+		
+		<!--JQuery-->
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+		
+		<!--Tablesorter
+		<script src="https://cdn.jsdelivr.net/tablesorter/2.17.4/js/jquery.tablesorter.min.js"></script> -->
+		
+		<!-- Required Bootstrap Settings -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<!--The script that counts the medals -->
+		<script src="counter.js"></script>
+	</head>
+	
+	<body>
+	
+		<div class="container">
+		
+			<h1>Medal Counter <small>Rio 2016</small></h1>
+			
+			<h4 id="last-updated"></h4>
+			
+			<p id="description">
+				This Medal Counter sorts countries based on total medals, then gold, silver and bronze. All data is pulled from the <a href="http://www.medalbot.com">MedalBot API</a>. The counter updates every 10 minutes in order to have the most accurate data as soon as it is posted.
+				<br>
+				Countries without any medals are not shown.
+			</p>
+		
+			<table class="table table-hover" id="medal-standings">
+				<thead>
+					<th>Place</th>
+					<th>Country</th>
+					<th>Gold</th>
+					<th>Silver</th>
+					<th>Bronze</th>
+					<th>Total</th>
+				</thead>
+				
+				<tbody id="medal-standings-body">
+				
+				</tbody>
+			</table>
+		</div>
+	</body>
+
+</html>
